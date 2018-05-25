@@ -262,7 +262,6 @@ public class Xls2HtmlConverter {
         out.format("<thead>%n");
         out.format("  <tr class=%s>%n", COL_HEAD_CLASS);
         out.format("    <th class=%s>&#x25CA;</th>%n", COL_HEAD_CLASS);
-        // noinspection UnusedDeclaration
         StringBuilder colName = new StringBuilder();
         for (int i = firstColumn; i < endColumn; i++) {
             colName.setLength(0);
@@ -288,9 +287,6 @@ public class Xls2HtmlConverter {
     }
 
     private void printSheetContent(Sheet sheet) {
-        //Print column header
-        //printColumnHeads();
-
         int splitTopRow = -1;
         boolean isSplit = false;
         PaneInformation pi = sheet.getPaneInformation();

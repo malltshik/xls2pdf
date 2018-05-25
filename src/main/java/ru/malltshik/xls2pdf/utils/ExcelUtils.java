@@ -200,9 +200,7 @@ public class ExcelUtils {
 
         for (int i=0;i<ptg.length;i++) {
             Ptg ptgi = ptg[i];
-            //System.out.println(ptgi);
             Object objclass = ptg[i].getClass();
-            //System.out.println(objclass);
             if (objclass == AreaPtg.class) {
                 CellRangeAddress crad = CellRangeAddress.valueOf(ptgi.toFormulaString());
 
@@ -242,9 +240,7 @@ public class ExcelUtils {
 
         for (int i=0;i<ptg.length;i++) {
             Ptg ptgi = ptg[i];
-            //System.out.println(ptgi);
             Object objclass = ptg[i].getClass();
-            //System.out.println(objclass);
             if (objclass == RefPtg.class){
                 CellRangeAddress crad = CellRangeAddress.valueOf(ptgi.toFormulaString());
 
