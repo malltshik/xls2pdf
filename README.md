@@ -18,7 +18,7 @@ new Xls2HtmlConverter(
 ```java
 new Xls2PdfConverter(
         new FileInputStream("source.xlsx"), // source excel file
-        new FileOutputStream("target.html") // result HTML file
+        new FileOutputStream("target.pdf") // result PDF file
 ).convert();
 ```
 
