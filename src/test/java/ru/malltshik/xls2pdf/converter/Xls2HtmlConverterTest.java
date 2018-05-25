@@ -33,8 +33,8 @@ public class Xls2HtmlConverterTest {
         assertThat(new String(Files.readAllBytes(target.toPath())), notNullValue());
         assertThat(new String(Files.readAllBytes(target.toPath())), not(equalTo("")));
 
-//        LOGGER.debug("Target file {} going to be deleted", filename);
-//        target.delete();
-//        LOGGER.debug("Target file {} has bean deleted", filename);
+        LOGGER.debug("Target file {} going to be deleted", filename);
+        target.delete();
+        LOGGER.debug("Target file {} has bean deleted", filename);
     }
 }
